@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id?": "1",
+      "nome": "Allan Farias",
+      "email": "allan.digitaltec@gmail.com",
+      "senha": "allan9999"
+    },
+    {
+      "id?": "2",
+      "nome": "joão dos Santos",
+      "email": "joao_santos@gmail.com",
+      "senha": "joao9999"
+    },
+    {
+      "id?": "3",
+      "nome": "Maria de Jesus",
+      "email": "maria_jesus@gmail.com",
+      "senha": "maria9999"
+    }
+  ],
+
+  "products": [
+    {
+      "id?": "1",
+      "nome": "God of wear",
+      "valor": "99.00"
+    },
+    {
+      "id?": "2",
+      "nome": "pc gamer z3000",
+      "valor": "5000.00"
+    },
+    {
+      "id?": "3",
+      "nome": "Placa de video Nvidia RX3020",
+      "valor": "99.00"
+    }
+  ]
+}

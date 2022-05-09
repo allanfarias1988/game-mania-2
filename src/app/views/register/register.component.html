@@ -1,0 +1,139 @@
+<!-- HEADER -->
+
+<!-- MAIN -->
+<div class="background">
+  <div class="container-fluid text-white mt-5 py-5 register">
+    <main>
+      <div class="py-5 text-center">
+        <h1><i class="bi bi-person-plus me-3"></i></h1>
+        <h2>Cadastro</h2>
+        <p class="lead mt-3">Informe seus dados abaixo para se cadastrar.</p>
+      </div>
+
+      <div class="row g-5 justify-content-center fs-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <div class="col">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Nome"
+                    value=""
+                    required=""
+                  />
+                  <div class="invalid-feedback">Primeiro Nome obrigatório</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Sobre Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Sobre Nome"
+                    value=""
+                    required=""
+                  />
+                  <div class="invalid-feedback">Sobre Nome é obrigatório</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label"
+                    >Nome de Usuário</label
+                  >
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Nome de usuário"
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Nome de usuário obrigatório
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email@examplo.com"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor entre com um email válido.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Endereço</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Exemplo: Rua central"
+                    required=""
+                  />
+                  <div class="invalid-feedback">
+                    Por favor digite um Endereço válido.
+                  </div>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Cidade</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Escolher...</option>
+                    <option>Floresta Azul</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor selecione uma cidade.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Escolher...</option>
+                    <option>Bahia</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor escolha um estado.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    placeholder="99999-999"
+                    required=""
+                  />
+                  <div class="invalid-feedback">CEP</div>
+
+                  <button
+                    class="w-100 btn btn-outline-light btn-lg mt-5"
+                    type="submit"
+                  >
+                    Cadastrar
+                  </button>
+                  <!-- </form> -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="login text-center text-white mt-5 py-5">
+  <main class="form-signin">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <i class="bi bi-shield-lock"></i>
+      <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+      <div class="form-floating text-black">
+        <input
+          [(ngModel)]="loginModel.email"
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="name@example.com"
+          name="email"
+        />
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating text-black">
+        <input
+          type="password"
+          class="form-control"
+          id="senha"
+          placeholder="Digite sua senha..."
+          name="password"
+          [(ngModel)]="loginModel.password"
+        />
+        <label for="password">Senha</label>
+      </div>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Relembre-me
+        </label>
+      </div>
+      <button
+        class="w-100 btn btn-lg btn-outline-light"
+        type="submit"
+        value="Fazer Login"
+      >
+        Entrar
+      </button>
+      <p class="mt-5">
+        Ainda não é inscrito?
+        <a routerLink="register" class="ms-2">Cadastre-se</a>
+      </p>
+    </form>
+    <p id="mensagem" *ngIf="mensagem != ''">{{ mensagem }}</p>
+  </main>
+</div>
