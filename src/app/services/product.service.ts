@@ -1,28 +1,17 @@
-/* import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class ProductService {
-
-  constructor() { }
-}
- */
-
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Observable } from 'rxjs';
+import { Product } from '../models/product.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProductCreateService {
-  constructor(private snackBar: MatSnackBar) {}
+export class ProductService {
+  url = 'http://localhost:3000/product';
 
-  showMessage(msg: string): void {
-    this.snackBar.open(msg, '', {
-      duration: 3000,
-      horizontalPosition: 'right',
-      verticalPosition: 'top',
-    });
+  constructor(private httpClient: HttpClient) {}
+
+  getNoticias(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(this.url);
   }
 }

@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
+import { HeaderComponent } from './views/header/header.component';
 import { AboutComponent } from './views/about/about.component';
 import { GamesComponent } from './views/games/games.component';
 import { HardwareComponent } from './views/hardware/hardware.component';
 import { PcGamerComponent } from './views/pc-gamer/pc-gamer.component';
 import { RegisterComponent } from './views/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './views/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
     LoginComponent,
     AboutComponent,
     GamesComponent,
@@ -28,8 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    FormsModule,
-    NgModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
